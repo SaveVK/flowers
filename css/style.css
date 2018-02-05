@@ -1,0 +1,164 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url("../images/DSCN6554-e1491242261223.jpg") fixed;
+}
+
+@font-face {
+    font-family: Iris;
+    src: url(../fonts/9329.ttf);
+}
+
+/* start head section */
+
+.bg-light {
+    background-color: rgba(51, 51, 51, 0.6) !important;    
+}
+
+.logo {
+    font-family: Poppins;
+    font-size: 21pt;
+}
+
+.navbar-light .navbar-brand {
+    color: #ec67a6;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #dd458c;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(236, 236, 236);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #dd458c;
+}
+
+.headerContacts {
+    display: flex;
+    flex-direction: column;
+    color: rgb(236, 236, 236);
+}
+
+/* end head section */
+
+/* start home section */
+
+#home {
+    background: #dd458c;
+}
+
+/* end home section */
+
+/* start products section */
+
+#products {
+    background-color: #fff;
+    padding: 80px 0 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.productsSection {
+    width: 60%;
+}
+
+.productsSection h2 {
+    font-family: Poppins;
+    color: #333333;
+}
+
+.productsSection h2:first-letter {
+    color: #db3762;
+    text-decoration: underline;
+}
+
+.productListBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 25px 0;
+}
+
+.productItem {
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.productItemText {
+    margin: 10px 0;
+}
+
+.productItemName {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+
+.productItemPrice {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.productItem img {
+    width: 100%;
+}
+
+/* end products section */
+
+/* start reviews section */
+
+#reviews {
+    background: url("../images/black_DSCN6554-e1491242261223.jpg");
+    /* height: 100%;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.reviewsBlock {    
+    display: flex;
+    justify-content: center;
+}
+
+.reviewItem {
+    width: 40%;
+}
+
+.revIImage {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.revIText {
+    text-align: center;
+    color: #fff;
+    font-size: 13pt;
+}
+
+.revIName {
+    text-align: center;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+/* end reviews section */
