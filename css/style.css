@@ -162,3 +162,41 @@ body {
 }
 
 /* end reviews section */
+
+/* start contact section */
+
+#contact {
+    padding: 80px 0 60px;
+    background: url("../images/black_Mahrovaya belaya surfiniya.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.contactSect {
+    width: 70%;
+}
+
+.contactBlock {
+    width: 50%;
+}
+
+.formBlock {
+    width: 50%;
+}
+
+.contactBlock h2 {
+    font-family: Poppins;
+    color: #fff;
+}
+
+.contactBlock h2:first-letter {
+    color: #db3762;
+    text-decoration: underline;
+}
+
+.contacts {
+    color: #fff;
+}
+
+/* end contact section */
