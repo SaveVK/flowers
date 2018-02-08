@@ -2,9 +2,9 @@ a {
     text-decoration: none;
 }
 
-body {
+/* body {
     background: url("../images/DSCN6554-e1491242261223.jpg") fixed;
-}
+} */
 
 @font-face {
     font-family: Iris;
@@ -12,9 +12,161 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
     border-color: #ec67a6
 }
+
+/* start loader */
+
+#loaderSection {
+    background: #d9a7c7;
+    background: linear-gradient(352deg, rgba(217,167,199,1) 0%, rgba(255,252,220,1) 100%); /* w3c */
+    width: 100%;
+    height: 100%
+}
+
+[data-ripple-color] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+[data-ripple-color] .ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(50);
+        opacity: 0;
+    }
+}
+
+.loader {
+    position: relative;
+    padding-top: 300px;
+    width: 40px;
+    margin: auto;
+}
+
+.loader .circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5.5s;
+}
+
+.loader .circle:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #af346e;
+    /* Pick a color */
+}
+
+.loader .circle:nth-child(2) {
+    animation-delay: 240ms;
+}
+
+.loader .circle:nth-child(3) {
+    animation-delay: 480ms;
+}
+
+.loader .circle:nth-child(4) {
+    animation-delay: 720ms;
+}
+
+.loader .circle:nth-child(5) {
+    animation-delay: 960ms;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(225deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    7% {
+        transform: rotate(345deg);
+        animation-timing-function: linear;
+    }
+    30% {
+        transform: rotate(455deg);
+        animation-timing-function: ease-in-out;
+    }
+    39% {
+        transform: rotate(690deg);
+        animation-timing-function: linear;
+    }
+    70% {
+        transform: rotate(815deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        transform: rotate(945deg);
+        animation-timing-function: ease-out;
+    }
+    76% {
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#headerReg {
+    display: none;
+}
+
+#mainReg {
+    display: none;
+}
+
+.loadText {
+    font-family: Poppins;
+    font-size: 24pt;
+    margin: 65px 0 0 0;
+    text-align: center;
+    color: #ec67a6;
+}
+
+/* end loader */
 
 /* start head section */
 
@@ -194,6 +346,7 @@ body {
     color: #fff;
     text-align: center;
 }
+
 #contact h1 {
     margin: 0 0 50px;
 }
@@ -203,7 +356,7 @@ body {
     text-decoration: underline;
 } */
 
-.hrf485 {    
+.hrf485 {
     display: flex;
     justify-content: center;
 }
@@ -215,8 +368,6 @@ body {
 .contactForm {
     width: 50%;
 }
-
-
 
 .contactSect {
     width: 60%;
@@ -272,7 +423,6 @@ body {
     justify-content: flex-start;
 }
 
-
 .nameFormDiv {
     width: 100%;
 }
@@ -293,7 +443,7 @@ body {
     border-bottom: rgb(177, 177, 177) 1px solid;
 }
 
-.emailForm{
+.emailForm {
     border: none;
     border-left: rgb(177, 177, 177) 1px solid;
     border-right: rgb(177, 177, 177) 1px solid;
@@ -332,22 +482,18 @@ body {
     .contactSect {
         flex-direction: column;
     }
-
     .contactBlock {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-
     .contacts {
-        width: 100%;    
+        width: 100%;
     }
-
     .map {
         width: 100%;
         margin: 0;
     }
-    
     .contactForm {
         width: 100%;
         margin: 20px 0 0 0;
@@ -376,15 +522,12 @@ body {
     .productItem {
         width: 44%;
     }
-
     #contact h1 {
         margin: 0 0 38px;
     }
-
     .contactBlock {
         flex-direction: column;
     }
-
     .map {
         width: 100%;
         margin: 20px 0 0 0;
@@ -401,7 +544,6 @@ body {
     #products {
         padding: 35px 0 60px;
     }
-    
     .productItem {
         width: 100%;
     }
