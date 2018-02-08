@@ -11,10 +11,15 @@ body {
     src: url(../fonts/9329.ttf);
 }
 
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.9);
+    border-color: #ec67a6
+}
+
 /* start head section */
 
 .bg-light {
-    background-color: rgba(51, 51, 51, 0.6) !important;    
+    background-color: rgba(51, 51, 51, 0.6) !important;
 }
 
 .logo {
@@ -26,7 +31,8 @@ body {
     color: #ec67a6;
 }
 
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
     color: #dd458c;
 }
 
@@ -122,17 +128,14 @@ body {
 
 #reviews {
     background: url("../images/black_DSCN6554-e1491242261223.jpg");
-    /* height: 100%;  */
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0;
+    padding: 165px 0;
 }
 
-.reviewsBlock {    
+.reviewsBlock {
     display: flex;
     justify-content: center;
 }
@@ -161,7 +164,21 @@ body {
     font-size: 13pt;
 }
 
+.carousel-indicators {
+    bottom: -130px;
+}
+
 /* end reviews section */
+
+/* .mapS{
+    height: 600px;
+    background: #fff;
+    padding: 80px 0 60px;
+}
+
+.mapS h2 {
+    text-align: center;
+} */
 
 /* start contact section */
 
@@ -169,34 +186,223 @@ body {
     padding: 80px 0 60px;
     background: url("../images/black_Mahrovaya belaya surfiniya.jpg");
     background-size: cover;
-    display: flex;
-    justify-content: center;
 }
 
-.contactSect {
-    width: 70%;
+.footerLogo {
+    font-family: Poppins;
+    font-size: 26pt;
+    color: #fff;
+    text-align: center;
+}
+#contact h1 {
+    margin: 0 0 50px;
+}
+
+/* #contact h1:first-letter {
+    color: #db3762;
+    text-decoration: underline;
+} */
+
+.hrf485 {    
+    display: flex;
+    justify-content: center;
 }
 
 .contactBlock {
     width: 50%;
 }
 
-.formBlock {
+.contactForm {
     width: 50%;
 }
 
-.contactBlock h2 {
-    font-family: Poppins;
-    color: #fff;
-}
 
-.contactBlock h2:first-letter {
-    color: #db3762;
-    text-decoration: underline;
+
+.contactSect {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacts {
+    color: rgb(228, 228, 228);
+    margin: 3px 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem {
+    margin: 5px 0;
+    font-size: 14pt;
+}
+
+.contactItem:first-child {
+    margin: 0 0 5px 0;
+}
+
+.contactItem:last-child {
+    margin: 5px 0 0 0;
+}
+
+.map {
+    width: 95%;
+    margin: 17px 0 0 0;
+}
+
+.form-control {
+    border-radius: 0;
+    background: rgba(97, 97, 97, 0.2);
     color: #fff;
 }
 
+.form-control:hover {
+    background: rgba(97, 97, 97, 0.4);
+}
+
+.form-control:focus {
+    background: rgba(26, 25, 25, 0.6);
+    color: #fff;
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+.nameAnumber {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.nameFormDiv {
+    width: 100%;
+}
+
+.numberFormDiv {
+    width: 100%;
+}
+
+.nameForm {
+    border: none;
+    border: rgb(177, 177, 177) 1px solid;
+}
+
+.numberForm {
+    border: none;
+    border-top: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 1px solid;
+    border-bottom: rgb(177, 177, 177) 1px solid;
+}
+
+.emailForm{
+    border: none;
+    border-left: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 1px solid;
+    border-bottom: rgb(177, 177, 177) 1px solid;
+}
+
+.message {
+    width: 100%;
+    height: 225px;
+    padding: 12px;
+    line-height: 1.5;
+    border: none;
+    border-right: rgb(177, 177, 177) 1px solid;
+    border-left: rgb(177, 177, 177) 1px solid;
+}
+
+.sendButton {
+    height: 60px;
+    background: rgba(26, 26, 26, 0.4);
+    font-family: Poppins;
+    font-size: 16pt;
+}
+
+.sendButton:hover {
+    cursor: pointer;
+    background: rgba(26, 26, 26, 0.8);
+}
+
+.marker {
+    color: #db3762;
+}
+
 /* end contact section */
+
+@media screen and ( max-width: 1420px) {
+    .contactSect {
+        flex-direction: column;
+    }
+
+    .contactBlock {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contacts {
+        width: 100%;    
+    }
+
+    .map {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .contactForm {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and ( max-width: 1300px) {
+    .productItem {
+        width: 30%;
+    }
+}
+
+@media screen and ( max-width: 1069px) {
+    .productItem {
+        width: 46%;
+    }
+}
+
+@media screen and ( max-width: 894px) {
+    .productItem {
+        width: 45%;
+    }
+}
+
+@media screen and ( max-width: 718px) {
+    .productItem {
+        width: 44%;
+    }
+
+    #contact h1 {
+        margin: 0 0 38px;
+    }
+
+    .contactBlock {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and ( max-width: 600px) {
+    .productItem {
+        width: 43%;
+    }
+}
+
+@media screen and ( max-width: 550px) {
+    #products {
+        padding: 35px 0 60px;
+    }
+    
+    .productItem {
+        width: 100%;
+    }
+}
